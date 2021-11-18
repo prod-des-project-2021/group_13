@@ -25,7 +25,9 @@ public class PlayerPlatformerController : PhysicsObject
         } else if(Input.GetButtonUp("Jump"))
         {
             if(velocity.y > 0)
+            {
                 velocity.y = velocity.y * .5f;
+            }
         }
 
         targetVelocity = move * maxSpeed;

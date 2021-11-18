@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class PhysicsObject : MonoBehaviour
 {
-
-    public float maxSpeed = 7;
-    public float jumpTakeOffSpeed = 7;
     
     public float gravityModifier = 1f;
     public float minGroundNormalY = .65f;
@@ -22,16 +19,11 @@ public class PhysicsObject : MonoBehaviour
 
     protected const float minMoveDistance = 0.001f;
     protected const float shellRadius = 0.01f;
-
-    void onEnable()
-    {
-       
-    }
     
     // Start is called before the first frame update
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D> ();
+        rb2d = GetComponent<Rigidbody2D>();
         contactFilter.useTriggers = false;
         contactFilter.SetLayerMask(Physics2D.GetLayerCollisionMask(gameObject.layer));
         contactFilter.useLayerMask = true;
@@ -41,24 +33,12 @@ public class PhysicsObject : MonoBehaviour
     void Update()
     {
         targetVelocity = Vector2.zero;
-        Vector2 move = Vector2.zero;
-
-        move.x = Input.GetAxis("Horizontal");
-        if(Input.GetButtonDown("Jump") && grounded)
-        {
-            velocity.y = jumpTakeOffSpeed;
-        } else if(Input.GetButtonUp("Jump"))
-        {
-            if(velocity.y > 0)
-                velocity.y = velocity.y * .5f;
-        }
-
-        targetVelocity = move * maxSpeed;
+        ComputeVelocity ();
     }
 
     protected virtual void ComputeVelocity()
     {
-
+        
     }
 
     void FixedUpdate()
@@ -84,6 +64,8 @@ public class PhysicsObject : MonoBehaviour
     void Movement(Vector2 move, bool yMovement)
     {
         float distance = move.magnitude;
+
+        rb2d = GetComponent<Rigidbody2D>();
 
         if(distance > minMoveDistance)
         {
@@ -118,6 +100,7 @@ public class PhysicsObject : MonoBehaviour
             }
 
         }
+
         rb2d.position = rb2d.position + move.normalized * distance;
     }
 }
