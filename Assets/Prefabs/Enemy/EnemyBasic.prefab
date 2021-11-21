@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2136226149933232930}
   - component: {fileID: 7070079632699088528}
   - component: {fileID: 2801755030052683782}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5271233086494887302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GroundDetection
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 18764096532535758}
   - component: {fileID: 2710511044730385871}
   - component: {fileID: 6559928891519195046}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StateDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,7 +249,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7274817625569305055}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallDetection
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
@@ -280,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7609529327630585116}
   - component: {fileID: 3326584116945498875}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,7 +361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6012212736629745923}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyBasic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 2772515486600677749}
   - component: {fileID: 7144135429939433950}
   - component: {fileID: 4044530860889600113}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
