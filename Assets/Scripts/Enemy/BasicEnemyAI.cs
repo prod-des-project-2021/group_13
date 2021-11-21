@@ -51,6 +51,8 @@ public class BasicEnemyAI : MonoBehaviour
         player = GameObject.Find("Player");
 
         anim = this.transform.Find("Sword").GetComponent<Animator>();
+
+        attackDistance = weapon.GetComponent<EnemyWeapon>().range;
     }
 
     void Start(){
