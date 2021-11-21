@@ -26,11 +26,14 @@ public class BasicEnemyAI : MonoBehaviour
     private TextMesh stateText;
 
     private bool isWaiting = false;
+    private bool isAttacking = false;
 
     public Transform groundDetection;
     public Transform wallDetection;
 
     private GameObject player;
+
+    private Animator anim;
 
 
     void Awake(){
@@ -41,6 +44,7 @@ public class BasicEnemyAI : MonoBehaviour
         state = State.Patrolling;
         player = GameObject.Find("Player");
 
+        anim = this.transform.Find("Sword").GetComponent<Animator>();
     }
 
     void Start(){
@@ -119,18 +123,17 @@ public class BasicEnemyAI : MonoBehaviour
         }
 
         //Go back to rest and patrol if player goes too far or too high
-        if(Vector3.Distance(transform.position, player.transform.position) > visionDistance || player.transform.position.y >= transform.position.y + 3){
-            state = State.Resting;
-        }
+        //if(Vector3.Distance(transform.position, player.transform.position) > visionDistance || player.transform.position.y >= transform.position.y + 3){
+       //     state = State.Resting;
+        //}
 
     }
 
     //Attack player
     void Attack(){
         stateText.text = "Attacking";
-
-        if(Vector3.Distance(transform.position, player.transform.position) > attackDistance){
-            state = State.Chasing;
+        if(!isAttacking){
+            StartCoroutine(Attacking());
         }
     }
 
@@ -153,6 +156,21 @@ public class BasicEnemyAI : MonoBehaviour
             movingRight = true;
             state =  State.Patrolling;
             isWaiting = false;
+        }
+    }
+
+    IEnumerator Attacking(){
+        isAttacking = true;
+        anim.SetBool("Attacking", true);
+        float animTime = 1f;
+        yield  return new WaitForSeconds(animTime);
+        if(Vector3.Distance(transform.position, player.transform.position) > attackDistance){
+            anim.SetBool("Attacking", false);
+            state =  State.Chasing;
+            isAttacking = false;
+        } else {
+            isAttacking = false;
+            anim.SetBool("Attacking", false);
         }
     }
 }
