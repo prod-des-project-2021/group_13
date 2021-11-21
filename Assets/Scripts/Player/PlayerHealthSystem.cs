@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerHealthSystem : MonoBehaviour
 {
 
-    private float health = 100f;
+    public float health = 100f;
 
     private TextMesh healthText;
 
