@@ -26,11 +26,18 @@ public class BasicEnemyAI : MonoBehaviour
     private TextMesh stateText;
 
     private bool isWaiting = false;
+    private bool isAttacking = false;
 
     public Transform groundDetection;
     public Transform wallDetection;
 
+    private int tilemapLayer = 1 << 7;
+
     private GameObject player;
+
+    private GameObject weapon;
+
+    private Animator anim;
 
 
     void Awake(){
@@ -38,9 +45,14 @@ public class BasicEnemyAI : MonoBehaviour
         //ONLY FOR DEBUGGING
         stateText = this.transform.Find("StateDisplay").GetComponent<TextMesh>();
 
+        weapon = this.gameObject.transform.GetChild(4).gameObject;
+
         state = State.Patrolling;
         player = GameObject.Find("Player");
 
+        anim = this.transform.Find("Sword").GetComponent<Animator>();
+
+        attackDistance = weapon.GetComponent<EnemyWeapon>().range;
     }
 
     void Start(){
@@ -64,7 +76,7 @@ public class BasicEnemyAI : MonoBehaviour
             Attack();
             break;
         }
-
+        
 
         //Visualizing Raycasts for debugging
         Debug.DrawRay(groundDetection.position, transform.TransformDirection(Vector2.down) * rayLength);
@@ -82,8 +94,8 @@ public class BasicEnemyAI : MonoBehaviour
     //Basic patrolling, stopping at an edge
     void Patrol(){
 
-        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, rayLength);
-        RaycastHit2D wallInfo = Physics2D.Raycast(wallDetection.position, Vector2.down, rayLength);
+        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, rayLength,tilemapLayer);
+        RaycastHit2D wallInfo = Physics2D.Raycast(wallDetection.position, Vector2.down, rayLength,tilemapLayer);
 
         transform.Translate(Vector2.right * patrolSpeed * Time.deltaTime);
 
@@ -119,18 +131,17 @@ public class BasicEnemyAI : MonoBehaviour
         }
 
         //Go back to rest and patrol if player goes too far or too high
-        if(Vector3.Distance(transform.position, player.transform.position) > visionDistance || player.transform.position.y >= transform.position.y + 3){
-            state = State.Resting;
-        }
+        //if(Vector3.Distance(transform.position, player.transform.position) > visionDistance || player.transform.position.y >= transform.position.y + 3){
+       //     state = State.Resting;
+        //}
 
     }
 
     //Attack player
     void Attack(){
         stateText.text = "Attacking";
-
-        if(Vector3.Distance(transform.position, player.transform.position) > attackDistance){
-            state = State.Chasing;
+        if(!isAttacking){
+            StartCoroutine(Attacking());
         }
     }
 
@@ -153,6 +164,22 @@ public class BasicEnemyAI : MonoBehaviour
             movingRight = true;
             state =  State.Patrolling;
             isWaiting = false;
+        }
+    }
+
+    IEnumerator Attacking(){
+        isAttacking = true;
+        anim.SetBool("Attacking", true);
+        float animTime = 1f;
+        weapon.GetComponent<EnemyWeapon>().DealDamage();
+        yield  return new WaitForSeconds(animTime);
+        if(Vector3.Distance(transform.position, player.transform.position) > attackDistance){
+            anim.SetBool("Attacking", false);
+            state =  State.Chasing;
+            isAttacking = false;
+        } else {
+            isAttacking = false;
+            anim.SetBool("Attacking", false);
         }
     }
 }
