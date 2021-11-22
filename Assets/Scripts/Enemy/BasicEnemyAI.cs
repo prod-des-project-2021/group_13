@@ -132,7 +132,7 @@ public class BasicEnemyAI : MonoBehaviour
 
         //Go back to rest and patrol if player goes too far or too high
         //if(Vector3.Distance(transform.position, player.transform.position) > visionDistance || player.transform.position.y >= transform.position.y + 3){
-       //     state = State.Resting;
+        //    state = State.Resting;
         //}
 
     }
