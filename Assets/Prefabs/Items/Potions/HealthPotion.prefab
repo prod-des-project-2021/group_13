@@ -123,3 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healStrength: 10
+  wiggleSpeed: 5
+  wiggleScale: 4
+  rotSpeed: 5
+  rotScale: 1
