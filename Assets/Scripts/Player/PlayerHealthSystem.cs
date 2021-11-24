@@ -6,6 +6,9 @@ public class PlayerHealthSystem : MonoBehaviour
 {
 
     public float health = 100f;
+    public float currentHealth;
+
+    public HealthBar healthBar;
 
     private TextMesh healthText;
 
@@ -20,7 +23,8 @@ public class PlayerHealthSystem : MonoBehaviour
 
     void Start()
     {
-        
+        currentHealth = health;
+        healthBar.SetMaxHealth(health);
     }
 
     // Update is called once per frame
@@ -28,6 +32,9 @@ public class PlayerHealthSystem : MonoBehaviour
     {
         
         healthText.text = health.ToString();
+
+        currentHealth = health;
+        healthBar.SetHealth(currentHealth);
 
     }
 }

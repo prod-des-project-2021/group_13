@@ -8,6 +8,8 @@ public class EnemyWeapon : MonoBehaviour
     public float range;
     public bool isRanged;
 
+    public float currentHealth;
+
     private GameObject player;
 
     private bool playerInRange = false;
@@ -27,6 +29,7 @@ public class EnemyWeapon : MonoBehaviour
 
         if(playerInRange && !isRanged){
             player.GetComponent<PlayerHealthSystem>().health -= damage;
+            currentHealth = player.GetComponent<PlayerHealthSystem>().health;
         }
     }
 
