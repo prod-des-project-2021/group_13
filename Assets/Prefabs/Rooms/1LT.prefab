@@ -263,7 +263,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83161b891cfbb574a89b463b6218400c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openingDirection: 0
+  openingDirection: 1
+  waitTime: 4
 --- !u!61 &1899669632792400903
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -664,7 +665,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2240247549495041867}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.3271255, y: -3.253685, z: 29.862236}
+  m_LocalPosition: {x: -3.3271255, y: -1.253685, z: 29.862236}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2638569541849586391}
@@ -1192,6 +1193,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1183679362420313132}
+  - component: {fileID: -4716274508281248174}
   m_Layer: 0
   m_Name: 1LT
   m_TagString: Untagged
@@ -1216,6 +1218,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-4716274508281248174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3522765739814586405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2984d17fe56d74db3f8a95c9403dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3949753935917902618
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,7 +1256,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3949753935917902618}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.3271255, y: -4.253685, z: 29.862236}
+  m_LocalPosition: {x: -3.3271255, y: -2.253685, z: 29.862236}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2638569541849586391}
@@ -1351,7 +1365,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4370088888409839747}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.3271255, y: -2.253685, z: 29.862236}
+  m_LocalPosition: {x: -3.3271255, y: -0.253685, z: 29.862236}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2638569541849586391}
@@ -1588,7 +1602,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83161b891cfbb574a89b463b6218400c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openingDirection: 0
+  openingDirection: 4
+  waitTime: 4
 --- !u!61 &4240857581188910014
 BoxCollider2D:
   m_ObjectHideFlags: 0

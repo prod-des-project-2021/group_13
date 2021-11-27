@@ -917,7 +917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83161b891cfbb574a89b463b6218400c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openingDirection: 0
+  openingDirection: 2
 --- !u!61 &6167133243904076382
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3436,6 +3436,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3406685881729915796}
+  - component: {fileID: -6783959699617422539}
   m_Layer: 0
   m_Name: 1B
   m_TagString: Untagged
@@ -3459,6 +3460,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-6783959699617422539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7041027654068896172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a2984d17fe56d74db3f8a95c9403dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8664912972020833918
 GameObject:
   m_ObjectHideFlags: 0
