@@ -19,7 +19,7 @@ public class PlayerPlatformerController : PhysicsObject
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     
@@ -27,9 +27,8 @@ public class PlayerPlatformerController : PhysicsObject
     protected override void ComputeVelocity()
     {
         Vector2 move = Vector2.zero;
-
-        //Basic movement functions
         
+        //Basic movement functions
         move.x = Input.GetAxis("Horizontal");
         if(Input.GetButtonDown("Jump") && grounded)
         {
@@ -42,7 +41,7 @@ public class PlayerPlatformerController : PhysicsObject
             }
         }
 
-        targetVelocity = move * maxSpeed;
+        
 
         //Dashing functions
 
@@ -50,19 +49,23 @@ public class PlayerPlatformerController : PhysicsObject
         {
             isDashing = true;
             currentDashTimer = startDashTimer;
-            rb2d.velocity = Vector2.zero;
+            targetVelocity = Vector2.zero;
             dashDirection = move.x;
         }
 
         if(isDashing)
         {
-            rb2d.velocity = transform.right * dashDirection * dashDistance;
+            targetVelocity = move * dashDistance;
             currentDashTimer -= Time.deltaTime;
             if(currentDashTimer <= 0)
             {
-                rb2d.velocity = Vector2.zero;
+                targetVelocity = Vector2.zero;
                 isDashing = false;
             }
+        }
+        else
+        {
+            targetVelocity = move * maxSpeed;
         }
     }
 }
