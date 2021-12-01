@@ -19,7 +19,7 @@ public class PhysicsObject : MonoBehaviour
 
     protected const float minMoveDistance = 0.001f;
     protected const float shellRadius = 0.01f;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -60,7 +60,7 @@ public class PhysicsObject : MonoBehaviour
 
         Movement (move, true);
     }
-
+    
     void Movement(Vector2 move, bool yMovement)
     {
         float distance = move.magnitude;
