@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: -4305398608881106184}
   - component: {fileID: -4456464812225227833}
   - component: {fileID: 1613317547465679789}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -218,7 +218,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &-4456464812225227833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,6 +235,8 @@ MonoBehaviour:
   minGroundNormalY: 0.65
   maxSpeed: 7
   jumpTakeOffSpeed: 7
+  dashDistance: 15
+  startDashTimer: 0.25
 --- !u!114 &1613317547465679789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,3 +250,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}
