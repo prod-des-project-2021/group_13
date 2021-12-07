@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1204843107693275306}
   - component: {fileID: 1320361885820488693}
-  - component: {fileID: 5710175658723791298}
   - component: {fileID: 658001515158366296}
   - component: {fileID: 2969483658261401942}
+  - component: {fileID: 4892007078296049956}
   m_Layer: 0
-  m_Name: I1
+  m_Name: Sharpening stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,20 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5710175658723791298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6134026753956327403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf2d35c29a83633489fb16b6211ed1bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  inStore: 0
 --- !u!61 &658001515158366296
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -146,3 +132,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4892007078296049956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6134026753956327403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2d35c29a83633489fb16b6211ed1bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 20
+  inStore: 0
+  moveSpeed: 0
+  moveMultiplr: 1
+  damage: 1
+  damageMultiplr: 1
+  itemDsc: Weapon damage increased!

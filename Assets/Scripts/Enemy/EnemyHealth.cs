@@ -7,11 +7,16 @@ public class EnemyHealth : MonoBehaviour
     public float maxHealth = 100;
     private float currentHealth;
     private GameObject enemy;
+    private GameObject player;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
+        player = GameObject.Find("Player");
+
     }
 
     // Update is called once per frame
@@ -35,7 +40,11 @@ public class EnemyHealth : MonoBehaviour
         Debug.Log("enemy died");
 
         //Disable the enemy
-        enemy = GameObject.Find("EnemyBasic");
-        Destroy(enemy);
+        Destroy(this.gameObject);
+
+        //Give coins to player
+        var reward = Random.Range(0,4);
+
+        player.GetComponent<PlayerCoinSystem>().coins += reward;
     }
 }
