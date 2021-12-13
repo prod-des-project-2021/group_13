@@ -7,6 +7,8 @@ TagManager:
   - TestTrigger
   - SpawnPoint
   - Rooms
+  - ShopSpawn
+  - Items
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - Tilemap
   - Enemy
   - Weapon
-  - 
+  - EnemyOnly
   - 
   - 
   - 
