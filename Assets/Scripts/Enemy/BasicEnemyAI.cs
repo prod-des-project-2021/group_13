@@ -47,7 +47,7 @@ public class BasicEnemyAI : MonoBehaviour
         //ONLY FOR DEBUGGING
         stateText = this.transform.Find("StateDisplay").GetComponent<TextMesh>();
 
-        weapon = this.gameObject.transform.GetChild(4).gameObject;
+        weapon = this.gameObject.transform.GetChild(3).gameObject;
 
         state = State.Patrolling;
         player = GameObject.Find("Player");
