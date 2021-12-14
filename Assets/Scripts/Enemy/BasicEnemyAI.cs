@@ -106,7 +106,7 @@ public class BasicEnemyAI : MonoBehaviour
         stateText.text = "Patrolling";
         
         //Initiate chase if player withing vision and not too high above
-        if(Vector3.Distance(transform.position, player.transform.position) < visionDistance && player.transform.position.y <= transform.position.y + 2){
+        if(Vector3.Distance(transform.position, player.transform.position) < visionDistance && player.transform.position.y <= transform.position.y + 2 && player.transform.position.y >= transform.position.y - 2){
             state = State.Chasing;
         }
         if(groundInfo.collider == false || wallInfo.collider == true){
@@ -135,9 +135,9 @@ public class BasicEnemyAI : MonoBehaviour
         }
 
         //Go back to rest and patrol if player goes too far or too high
-        //if(Vector3.Distance(transform.position, player.transform.position) > visionDistance || player.transform.position.y >= transform.position.y + 3){
-        //    state = State.Resting;
-        //}
+        if(Vector3.Distance(transform.position, player.transform.position) > visionDistance || player.transform.position.y >= transform.position.y + 2 || player.transform.position.y <= transform.position.y - 2){
+           state = State.Resting;
+        }
 
     }
 
