@@ -8,7 +8,9 @@ public class DoorOpener : MonoBehaviour
         Destroy(gameObject, 4f);
     }
     private void OnTriggerEnter2D(Collider2D other) {
-        Debug.Log("Door Blocked");
-        Destroy(other.gameObject, 0.5f);
+        if(other.gameObject.name != "Player"){
+            Debug.Log("Door Blocked");
+            Destroy(other.gameObject, 0.5f);
+        }
     }
 }
