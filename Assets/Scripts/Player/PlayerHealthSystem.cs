@@ -36,5 +36,7 @@ public class PlayerHealthSystem : MonoBehaviour
         currentHealth = health;
         healthBar.SetHealth(currentHealth);
 
+
+
     }
 }

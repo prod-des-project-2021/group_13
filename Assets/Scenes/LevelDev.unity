@@ -508,7 +508,7 @@ MonoBehaviour:
   - {fileID: 1974270173499515452, guid: d161f3e269df1c44eacebcda4f83ce63, type: 3}
   closedRoom: {fileID: 7015718547537887846, guid: 97b1c8665e90c004789e5f70f275fae7, type: 3}
   rooms: []
-  waitTime: 2
+  waitTime: 4
   boss: {fileID: 4302501574864700316, guid: 858549477fc203845840fcee7f340dc6, type: 3}
   shop: {fileID: 660275577802555315, guid: c0c3de53bffcc1f4b9e2d43d1aef3cb1, type: 3}
 --- !u!4 &1869456544
