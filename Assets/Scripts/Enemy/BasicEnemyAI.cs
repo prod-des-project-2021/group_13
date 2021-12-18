@@ -32,6 +32,8 @@ public class BasicEnemyAI : MonoBehaviour
     public Transform wallDetection;
 
     private int tilemapLayer = 1 << 7;
+    private int enemyOnlyLayer = 1 << 10;
+    private int finalLayer;
 
     private GameObject player;
 
@@ -45,7 +47,7 @@ public class BasicEnemyAI : MonoBehaviour
         //ONLY FOR DEBUGGING
         stateText = this.transform.Find("StateDisplay").GetComponent<TextMesh>();
 
-        weapon = this.gameObject.transform.GetChild(4).gameObject;
+        weapon = this.gameObject.transform.GetChild(3).gameObject;
 
         state = State.Patrolling;
         player = GameObject.Find("Player");
@@ -53,6 +55,8 @@ public class BasicEnemyAI : MonoBehaviour
         anim = this.transform.Find("Sword").GetComponent<Animator>();
 
         attackDistance = weapon.GetComponent<EnemyWeapon>().range;
+
+        finalLayer = tilemapLayer | enemyOnlyLayer;
     }
 
     void Start(){
@@ -94,15 +98,15 @@ public class BasicEnemyAI : MonoBehaviour
     //Basic patrolling, stopping at an edge
     void Patrol(){
 
-        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, rayLength,tilemapLayer);
-        RaycastHit2D wallInfo = Physics2D.Raycast(wallDetection.position, Vector2.down, rayLength,tilemapLayer);
+        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, rayLength,finalLayer);
+        RaycastHit2D wallInfo = Physics2D.Raycast(wallDetection.position, Vector2.down, rayLength,finalLayer);
 
         transform.Translate(Vector2.right * patrolSpeed * Time.deltaTime);
 
         stateText.text = "Patrolling";
         
         //Initiate chase if player withing vision and not too high above
-        if(Vector3.Distance(transform.position, player.transform.position) < visionDistance && player.transform.position.y <= transform.position.y + 2){
+        if(Vector3.Distance(transform.position, player.transform.position) < visionDistance && player.transform.position.y <= transform.position.y + 2 && player.transform.position.y >= transform.position.y - 2){
             state = State.Chasing;
         }
         if(groundInfo.collider == false || wallInfo.collider == true){
@@ -131,9 +135,9 @@ public class BasicEnemyAI : MonoBehaviour
         }
 
         //Go back to rest and patrol if player goes too far or too high
-        //if(Vector3.Distance(transform.position, player.transform.position) > visionDistance || player.transform.position.y >= transform.position.y + 3){
-        //    state = State.Resting;
-        //}
+        if(Vector3.Distance(transform.position, player.transform.position) > visionDistance || player.transform.position.y >= transform.position.y + 2 || player.transform.position.y <= transform.position.y - 2){
+           state = State.Resting;
+        }
 
     }
 

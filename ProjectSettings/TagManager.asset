@@ -7,6 +7,8 @@ TagManager:
   - TestTrigger
   - SpawnPoint
   - Rooms
+  - ShopSpawn
+  - Items
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - Tilemap
   - Enemy
   - Weapon
-  - 
+  - EnemyOnly
   - 
   - 
   - 
@@ -41,6 +43,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 140546783
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Midground
+    uniqueID: 324659191
+    locked: 0
+  - name: Foreground
+    uniqueID: 3786699645
     locked: 0

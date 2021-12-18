@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &586816784819544952
+--- !u!1 &9038201066999885887
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,25 +8,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9099872163845347522}
-  - component: {fileID: 4443692389334213185}
-  - component: {fileID: 1715835260444896496}
-  - component: {fileID: 57865859373542200}
-  - component: {fileID: 5953283555531538433}
+  - component: {fileID: 5900415736773678013}
+  - component: {fileID: 6735277884742980693}
+  - component: {fileID: -334690600513107465}
+  - component: {fileID: -1520309694678222516}
+  - component: {fileID: 2615672284699348004}
+  - component: {fileID: -3673005968892269834}
   m_Layer: 0
-  m_Name: I3
+  m_Name: Hearty Meal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9099872163845347522
+--- !u!4 &5900415736773678013
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586816784819544952}
+  m_GameObject: {fileID: 9038201066999885887}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.4695404, y: 4.944338, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -34,13 +35,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4443692389334213185
+--- !u!212 &6735277884742980693
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586816784819544952}
+  m_GameObject: {fileID: 9038201066999885887}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -74,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.14438558, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f166a423f1dd0e94594f9125d88a04c9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -85,27 +86,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1715835260444896496
+--- !u!114 &-334690600513107465
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586816784819544952}
+  m_GameObject: {fileID: 9038201066999885887}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf2d35c29a83633489fb16b6211ed1bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 0
---- !u!50 &57865859373542200
+  inStore: 0
+  moveSpeed: 0
+  moveMultiplr: 1
+  damage: 0
+  damageMultiplr: 1
+  itemDsc: 
+--- !u!50 &-1520309694678222516
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586816784819544952}
+  m_GameObject: {fileID: 9038201066999885887}
   m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
@@ -119,13 +126,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &5953283555531538433
+--- !u!61 &2615672284699348004
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586816784819544952}
+  m_GameObject: {fileID: 9038201066999885887}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -136,7 +143,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.64, y: 0.64}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -145,3 +152,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-3673005968892269834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9038201066999885887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2d35c29a83633489fb16b6211ed1bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 35
+  inStore: 0
+  moveSpeed: 0
+  moveMultiplr: 1.1
+  damage: 0
+  damageMultiplr: 1.1
+  itemDsc: You feel reinvigorated!
