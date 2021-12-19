@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealthSystem : MonoBehaviour
 {
 
+    public float maxhealth = 100f;
     public float health = 100f;
-    public float currentHealth;
 
     public HealthBar healthBar;
 
@@ -16,27 +17,25 @@ public class PlayerHealthSystem : MonoBehaviour
     // Start is called before the first frame update
 
     void Awake() {
-        
-        healthText = this.transform.Find("HealthDisplay").GetComponent<TextMesh>();
+
 
     }
 
     void Start()
     {
-        currentHealth = health;
-        healthBar.SetMaxHealth(health);
+        healthBar.SetMaxHealth(maxhealth);
+        healthBar.SetHealth(health);
     }
 
     // Update is called once per frame
     void Update()
     {
         
-        healthText.text = health.ToString();
+        healthBar.SetHealth(health);
 
-        currentHealth = health;
-        healthBar.SetHealth(currentHealth);
-
-
+        if(health <= 0){
+            SceneManager.LoadScene("GameOver");
+        }
 
     }
 }

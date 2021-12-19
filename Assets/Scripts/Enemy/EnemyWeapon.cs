@@ -29,7 +29,6 @@ public class EnemyWeapon : MonoBehaviour
 
         if(playerInRange && !isRanged){
             player.GetComponent<PlayerHealthSystem>().health -= damage;
-            currentHealth = player.GetComponent<PlayerHealthSystem>().health;
         }
     }
 

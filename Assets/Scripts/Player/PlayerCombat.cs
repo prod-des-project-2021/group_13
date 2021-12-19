@@ -42,7 +42,7 @@ public class PlayerCombat : MonoBehaviour
 
     //show the attack hitbox, for testing purpose
 
-    /*
+  
     void OnDrawGizmosSelected()
     {
         if(attackPoint == null)
@@ -51,5 +51,5 @@ public class PlayerCombat : MonoBehaviour
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
-    */
+
 }

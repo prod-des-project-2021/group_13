@@ -28,7 +28,7 @@ public class Item : MonoBehaviour
         player = GameObject.Find("Player");
         canvas = GameObject.Find("Canvas");
         infoBox = canvas.transform.GetChild(1);
-
+        this.name = this.name.Replace("(Clone)", "");
     }
 
     // Update is called once per frame

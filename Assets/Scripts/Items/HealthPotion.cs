@@ -28,6 +28,7 @@ public class HealthPotion : MonoBehaviour
         startpos = this.transform.position;
         endpos = startpos + Vector3.right;
         player = GameObject.Find("Player");
+        this.name = this.name.Replace("(Clone)", "");
 
         timer = 0;
 
