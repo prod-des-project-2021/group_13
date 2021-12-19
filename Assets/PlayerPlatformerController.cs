@@ -10,15 +10,38 @@ public class PlayerPlatformerController : PhysicsObject
     //dash vars
     public float dashDistance;
     public float startDashTimer;
-
     float currentDashTimer;
     float dashDirection;
+    //animation vars
+    public bool faceRight = false;
+    public Animator animator;
+
+    
 
     bool isDashing = false;
 
     protected override void ComputeVelocity()
     {
         Vector2 move = Vector2.zero;
+
+        //animation
+        if(Input.GetButton("Horizontal"))
+        {
+            animator.SetBool("Moving", true);
+        }
+        else
+        {
+            animator.SetBool("Moving", false);
+        }
+
+        if(Input.GetKeyDown(KeyCode.LeftArrow) && faceRight)
+        {
+            ChangeDirection();
+        }
+        else if(Input.GetKeyDown(KeyCode.RightArrow) && !faceRight)
+        {
+            ChangeDirection();
+        }
         
         //Basic movement functions
         move.x = Input.GetAxis("Horizontal");
@@ -59,5 +82,14 @@ public class PlayerPlatformerController : PhysicsObject
         {
             targetVelocity = move * maxSpeed;
         }
+    }
+
+    private void ChangeDirection()
+    {
+        faceRight = !faceRight;
+
+        Vector3 flipped = transform.localScale;
+        flipped.x *= -1f;
+        transform.localScale = flipped;
     }
 }
