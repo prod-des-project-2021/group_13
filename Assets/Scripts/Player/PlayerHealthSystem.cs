@@ -18,7 +18,7 @@ public class PlayerHealthSystem : MonoBehaviour
 
     void Awake() {
 
-
+        healthBar = GameObject.Find("Health bar").GetComponent<HealthBar>();
     }
 
     void Start()
