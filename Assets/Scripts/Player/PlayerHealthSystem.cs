@@ -34,6 +34,9 @@ public class PlayerHealthSystem : MonoBehaviour
         healthBar.SetHealth(health);
 
         if(health <= 0){
+            
+            Destroy(GameObject.Find("Canvas"));
+            Destroy(this.gameObject);
             SceneManager.LoadScene("GameOver");
         }
 
