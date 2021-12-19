@@ -8,6 +8,7 @@ public class EnemyHealth : MonoBehaviour
     private float currentHealth;
     private GameObject enemy;
     private GameObject player;
+    private GameObject enemytotal;
 
 
 
@@ -16,6 +17,7 @@ public class EnemyHealth : MonoBehaviour
     {
         currentHealth = maxHealth;
         player = GameObject.Find("Player");
+        enemytotal = GameObject.Find("EnemyCount");
 
     }
 
@@ -39,6 +41,7 @@ public class EnemyHealth : MonoBehaviour
     {
         Debug.Log("enemy died");
 
+        enemytotal.GetComponent<EnemyCount>().total -= 1;
         //Disable the enemy
         Destroy(this.gameObject);
 

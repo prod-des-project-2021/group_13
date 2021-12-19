@@ -25,6 +25,8 @@ public class BasicEnemyAI : MonoBehaviour
 
     private TextMesh stateText;
 
+    private GameObject enemytotal;
+
     private bool isWaiting = false;
     private bool isAttacking = false;
 
@@ -57,6 +59,10 @@ public class BasicEnemyAI : MonoBehaviour
         attackDistance = weapon.GetComponent<EnemyWeapon>().range;
 
         finalLayer = tilemapLayer | enemyOnlyLayer;
+
+        enemytotal = GameObject.Find("EnemyCount");
+
+        enemytotal.GetComponent<EnemyCount>().total += 1;
     }
 
     void Start(){
