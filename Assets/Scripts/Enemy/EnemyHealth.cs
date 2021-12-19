@@ -43,7 +43,7 @@ public class EnemyHealth : MonoBehaviour
 
         enemytotal.GetComponent<EnemyCount>().total -= 1;
         //Disable the enemy
-        Destroy(this.gameObject);
+        Destroy(this.gameObject.transform.parent.gameObject);
 
         //Give coins to player
         var reward = Random.Range(0,4);
