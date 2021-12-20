@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6422449025755546508}
   - component: {fileID: 8048882259259280706}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7314378429589439701}
   - component: {fileID: 4324028194548064876}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4271228234714182405}
   - component: {fileID: 8529407189429626015}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7206546114797451417}
   - component: {fileID: 8256734878396925792}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4143966156813846668}
   - component: {fileID: 4786311756800545283}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7670239945690306433}
   - component: {fileID: 3583326708597439894}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5112012835974456009}
   - component: {fileID: 1691787394594686188}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,7 +584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8581311213014186145}
   - component: {fileID: 5429342383429071277}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -666,7 +666,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5797898105581761149}
   - component: {fileID: 5252196368637230584}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -748,7 +748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1675334567810278879}
   - component: {fileID: 3232115195574295737}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -829,7 +829,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8179990991427564749}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -904,7 +904,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8086181661389671718}
   - component: {fileID: 2537957845668628481}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -986,7 +986,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4601350040799659299}
   - component: {fileID: 2274757657569198067}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1068,7 +1068,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1476732036320529684}
   - component: {fileID: 4476558731430783795}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1150,7 +1150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8925376581786884985}
   - component: {fileID: 2088766416063777241}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1232,7 +1232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 895491525932599244}
   - component: {fileID: 5127776248888837653}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1314,7 +1314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6661019158593744318}
   - component: {fileID: 5783707645545237739}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1396,7 +1396,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7808559712704895493}
   - component: {fileID: 343866416069493313}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1478,7 +1478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3285280939617779157}
   - component: {fileID: 3710386592211402905}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1560,7 +1560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7109973646407381808}
   - component: {fileID: 7387645500367764887}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1642,7 +1642,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4401386133257178075}
   - component: {fileID: 3113047718579321010}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1724,7 +1724,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3620012634011893723}
   - component: {fileID: 4258836745372706074}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1806,7 +1806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1079368344621375837}
   - component: {fileID: 4314318809039112962}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1888,7 +1888,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2309386515194745038}
   - component: {fileID: 2027026336302929059}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1970,7 +1970,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8642683844292184934}
   - component: {fileID: 1188221269976751111}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2052,7 +2052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1025447962675162661}
   - component: {fileID: 1047813866311811220}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2134,7 +2134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3736748880568875800}
   - component: {fileID: 1102402896527144124}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2216,7 +2216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8277215392146180610}
   - component: {fileID: 4495611149172895825}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2298,7 +2298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2936410349226207831}
   - component: {fileID: 3285161615450177986}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2380,7 +2380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4022957802576421007}
   - component: {fileID: 4687179297373625208}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2462,7 +2462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2743644758470933433}
   - component: {fileID: 6955794109844792709}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2544,7 +2544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7521033465325869688}
   - component: {fileID: 3967691151218849942}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2626,7 +2626,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2640716055221018549}
   - component: {fileID: 6459176698791652264}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2708,7 +2708,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6133620022352252364}
   - component: {fileID: 8049377264277548686}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CLOSED
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -2753,7 +2753,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7725964141949599245}
   - component: {fileID: 4616208098844595981}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2835,7 +2835,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7005863851363994419}
   - component: {fileID: 4729691520206140801}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2917,7 +2917,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1822336630833442184}
   - component: {fileID: 2714661301355036684}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2999,7 +2999,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5628475543785745213}
   - component: {fileID: 267225983678475525}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3081,7 +3081,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8114465629569549484}
   - component: {fileID: 8277832154142804327}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3163,7 +3163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1624502669867945144}
   - component: {fileID: 1248798605391318423}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3245,7 +3245,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8611909867268033878}
   - component: {fileID: 6243627538179212724}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3327,7 +3327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2856424910986384457}
   - component: {fileID: 2331198829725333409}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3409,7 +3409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7868007078998875500}
   - component: {fileID: 1107276001994760794}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3490,7 +3490,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 225619992216599611}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: spawnPoint
   m_TagString: SpawnPoint
   m_Icon: {fileID: 0}
@@ -3521,7 +3521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1004594135426792816}
   - component: {fileID: 2976529848340360836}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3603,7 +3603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2521859344123903970}
   - component: {fileID: 2564974507772211592}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3685,7 +3685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1338994219795268829}
   - component: {fileID: 3513732654210643997}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WhiteBox (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
