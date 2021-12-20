@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelDev.unity
     guid: 1bc622eebfaee964f84238a99543037c
   - enabled: 1
-    path: Assets/Scenes/TransitionTest.unity
-    guid: 02654bd422f0840499fe14e811c9237c
-  - enabled: 1
     path: Assets/Scenes/BossScene.unity
     guid: abd1974486b785443840078bda4a056d
   - enabled: 1

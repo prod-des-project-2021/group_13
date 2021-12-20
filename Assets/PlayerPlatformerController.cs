@@ -34,11 +34,11 @@ public class PlayerPlatformerController : PhysicsObject
             animator.SetBool("Moving", false);
         }
 
-        if(Input.GetKeyDown(KeyCode.LeftArrow) && faceRight)
+        if(Input.GetKeyDown(KeyCode.A) && faceRight)
         {
             ChangeDirection();
         }
-        else if(Input.GetKeyDown(KeyCode.RightArrow) && !faceRight)
+        else if(Input.GetKeyDown(KeyCode.D) && !faceRight)
         {
             ChangeDirection();
         }
