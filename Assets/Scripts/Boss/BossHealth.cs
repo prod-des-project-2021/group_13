@@ -7,6 +7,12 @@ public class BossHealth : MonoBehaviour
 
     public int health = 100;
 
+	private GameObject enemytotal;
+
+	private void Start() {
+		enemytotal = GameObject.Find("EnemyCount");
+	}
+
 	public void TakeDamage(int damage)
 	{
 		health -= damage;
@@ -19,6 +25,8 @@ public class BossHealth : MonoBehaviour
 
 	void Die()
 	{
+		enemytotal.GetComponent<EnemyCount>().total -= 1;
+
 		Destroy(gameObject);
 	}
 }

@@ -7,10 +7,16 @@ public class Boss : MonoBehaviour
 
     public Transform player;
 
+    private GameObject enemytotal;
+
     public bool isFlipped = false;
 
     private void Start() {
         Invoke("SetPlayerTransform", 0.5f);
+
+        enemytotal = GameObject.Find("EnemyCount");
+
+        enemytotal.GetComponent<EnemyCount>().total += 1;
     }
 
     private void SetPlayerTransform(){
