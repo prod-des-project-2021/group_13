@@ -19,13 +19,13 @@ public class VerticalPlatform : MonoBehaviour
 
     void Update() {
 
-    if(player.transform.position.y < this.gameObject.transform.position.y + 1.001f){
+    if(player.transform.position.y < this.gameObject.transform.position.y + 0.2f){
         collider.isTrigger = true;
-    } else if (player.transform.position.y > this.gameObject.transform.position.y + 1.1f) {
+    } else if (player.transform.position.y > this.gameObject.transform.position.y + 0.65f) {
         collider.isTrigger = false;
     }
 
-    if(Input.GetKey(KeyCode.S)){
+    if(Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)){
         collider.isTrigger = true;
     }
 

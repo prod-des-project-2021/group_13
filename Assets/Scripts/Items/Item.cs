@@ -65,10 +65,12 @@ public class Item : MonoBehaviour
         //Apply item effects
         player.GetComponent<PlayerPlatformerController>().maxSpeed += moveSpeed;
         player.GetComponent<PlayerPlatformerController>().maxSpeed *= moveMultiplr;
-        player.transform.Find("Sword").GetComponent<PlayerCombat>().damage += damage;
-        player.transform.Find("Sword").GetComponent<PlayerCombat>().damage *= damageMultiplr;
+        player.GetComponent<PlayerCombat>().damage += damage;
+        player.GetComponent<PlayerCombat>().damage *= damageMultiplr;
         
         Destroy(this.gameObject);
+
+        Debug.Log("Shop");
 
 
     }
